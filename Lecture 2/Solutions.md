@@ -1,4 +1,4 @@
-# Exercises
+# Solutions of Lecture 2
 
 1. Read [`man ls`](https://www.man7.org/linux/man-pages/man1/ls.1.html) and write an `ls` command that lists files in the following manner
 
