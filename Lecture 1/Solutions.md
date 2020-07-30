@@ -71,7 +71,7 @@
    the file `semester` as the first argument, i.e. `sh semester`. Why does
    this work, while `./semester` didn't?
 
-   **Solution:** Because the current user of the terminal do not have executable permissions to this file. However the current user has permssions to use `sh` command to run the file and the filename is used as an argument of `sh` command.
+   **Solution:** Because the current user of the terminal does not have executable permissions to this file. However the current user has permssions to use `sh` command to run the file and the filename is used as an argument of `sh` command.
 
 7. Look up the `chmod` program (e.g. use `man chmod`).
 
