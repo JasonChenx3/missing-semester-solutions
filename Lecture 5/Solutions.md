@@ -4,7 +4,7 @@
 
 1. From what we have seen, we can use some `ps aux | grep` commands to get our jobs' pids and then kill them, but there are better ways to do it. Start a `sleep 10000` job in a terminal, background it with `Ctrl-Z` and continue its execution with `bg`. Now use [`pgrep`](https://www.man7.org/linux/man-pages/man1/pgrep.1.html) to find its pid and [`pkill`](http://man7.org/linux/man-pages/man1/pgrep.1.html) to kill it without ever typing the pid itself. (Hint: use the `-af` flags).
 
-   **Solutions:**
+   **Solution:**
 
    ```bash
    pgrep sleep
@@ -28,7 +28,19 @@
 
 1. Create an alias `dc` that resolves to `cd` for when you type it wrongly.
 
+   **Solution:**
+
+   ```bash
+   alias dc=cd
+   ```
+
 1. Run `history | awk '{$1="";print substr($0,2)}' | sort | uniq -c | sort -n | tail -n 10` to get your top 10 most used commands and consider writing shorter aliases for them. Note: this works for Bash; if you're using ZSH, use `history 1` instead of just `history`.
+
+   **Solution:**
+
+   ```zsh
+   alias topcmd="history 1 | awk '{$1="";print substr($0,2)}' | sort | uniq -c | sort -n | tail -n 10"
+   ```
 
 ## Dotfiles
 
